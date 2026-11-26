@@ -1,0 +1,2 @@
+本工具将大宇资讯的 .RIX 音乐文件转换为 AdLib Visual Composer 可读取的 .ROL 工程，并从 RIX 内嵌乐器库中导出对应的 .INS 音色文件。
+Converts SOFTSTAR RIX to AdLib ROL and INS, which is the matching instrument file for ROL.

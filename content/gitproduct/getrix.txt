@@ -1,0 +1,2 @@
+这是一个用于从游戏资源包中“特异性提取 .rix 文件”的小工具，它会扫描二进制文件，定位符合特征的资源块，并按块导出为独立的 .rix 文件。
+This project provides a small utility for extracting .rix files from game package binaries by identifying specific data blocks embedded in the package. It is designed for highly targeted extraction of music-related resources, especially where .rix chunks appear inside larger game archives.

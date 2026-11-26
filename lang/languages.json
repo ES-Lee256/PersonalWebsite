@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-11-26T03:21:26.046Z",
+  "languages": [
+    {
+      "code": "zh-TW",
+      "name": "繁體中文",
+      "locale": "zh-Hant-TW",
+      "dir": "ltr",
+      "order": 20,
+      "file": "lang-zh-tw.conf"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "locale": "en",
+      "dir": "ltr",
+      "order": 30,
+      "file": "lang-en.conf"
+    }
+  ]
+}

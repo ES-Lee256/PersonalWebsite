@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2ede4">
+  <meta name="color-scheme" content="light">
+  <title>诸葛蕴乂 · 个人网站</title>
+  <meta name="description" content="诸葛蕴乂的个人网站：开源项目、游戏作品、实体物品与个人橱窗。">
+  <meta property="og:title" content="诸葛蕴乂 · 个人网站">
+  <meta property="og:description" content="诸葛蕴乂的个人网站：开源项目、游戏作品、实体物品与个人橱窗。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="icon/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    if (window.location.protocol === 'file:') {
+      document.documentElement.setAttribute('data-file-protocol', 'true');
+    }
+  </script>
+</head>
+<body>
+  <div class="file-protocol-warning" role="alert">
+    <strong>无法读取本地 conf：</strong>
+    <span>Edge 直接双击打开 HTML 时会阻止读取 content 下的配置文件。请部署到 GitHub Pages，或通过本地静态服务器（如 VS Code Live Server）打开本页。</span>
+  </div>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+
+  <div class="page-atmosphere" aria-hidden="true">
+    <div class="glow glow--one"></div>
+    <div class="glow glow--two"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="诸葛蕴乂 · 个人网站">
+      <span class="brand-seal" aria-hidden="true">乂</span>
+      <span class="brand-copy">
+        <strong>诸葛蕴乂</strong>
+        <small data-i18n="brand.sub">个人网站</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="主要导航">
+      <a href="#home" data-nav-section="home" data-i18n="nav.home">首页</a>
+      <a href="#bilibili" data-nav-section="bilibili" data-i18n="nav.bilibili">B站精选</a>
+      <a href="#git" data-nav-section="git" data-i18n="nav.git">开源项目</a>
+      <a href="#game" data-nav-section="game" data-i18n="nav.game">游戏项目</a>
+      <a href="#commercial" data-nav-section="commercial" data-i18n="nav.commercial" hidden>商业实体</a>
+      <a href="#showcase" data-nav-section="showcase" data-i18n="nav.showcase" hidden>个人橱窗</a>
+    </nav>
+
+    <div class="lang-switch">
+      <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M3.5 9h17M3.5 15h17M12 3c2.3 2.5 3.5 5.5 3.5 9s-1.2 6.5-3.5 9c-2.3-2.5-3.5-5.5-3.5-9S9.7 5.5 12 3Z"></path>
+      </svg>
+      <label class="sr-only" for="langSelect" data-i18n="language.label">切换语言</label>
+      <select id="langSelect" aria-label="切换语言">
+        <option value="zh-CN">简体中文</option>
+      </select>
+      <svg class="lang-chevron" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="m4 6 4 4 4-4"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroName">
+      <div class="hero-orbit hero-orbit--outer" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit--inner" aria-hidden="true"></div>
+      <span class="hero-ghost" aria-hidden="true">乂</span>
+
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span data-i18n="hero.kicker">个人主页 / PERSONAL SITE</span>
+          <span class="eyebrow-line" aria-hidden="true"></span>
+        </p>
+
+        <div class="avatar-shell">
+          <span class="avatar-halo" aria-hidden="true"></span>
+          <div class="avatar-frame">
+            <img id="avatar" src="content/mainpage/avatar.jpg" alt="诸葛蕴乂的头像" width="640" height="640">
+            <span class="avatar-fallback" id="avatarFallback" aria-hidden="true">蕴</span>
+          </div>
+          <span class="avatar-status" title="Online" aria-label="Online"></span>
+        </div>
+
+        <h1 class="hero-name" id="heroName">诸葛蕴乂</h1>
+        <p class="hero-eng" id="heroEng">Esric Lee</p>
+        <p class="hero-intro" id="heroIntro">你好，我是诸葛蕴乂。这里是我的个人网站，用来归档开源项目、游戏作品，以及一些实体与个人选物。欢迎随处看看，也欢迎通过 Bilibili 或 GitHub 找到我。</p>
+
+        <div class="social-links" id="socialLinks" aria-label="社交账户"></div>
+        <p class="email-note" id="emailNote" data-i18n="social.emailNote" hidden>若有要务或有要反馈的意见，请用这个邮箱。</p>
+      </div>
+
+      <a class="scroll-cue" href="#bilibili">
+        <span data-i18n="scroll">向下浏览</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M10 3v13M5.5 11.5 10 16l4.5-4.5"></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="section section--bilibili" id="bilibili" data-section="bilibili" aria-labelledby="bilibiliTitle">
+      <div class="section-head">
+        <div class="section-index" aria-hidden="true">
+          <span>01</span>
+          <i></i>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker" id="bilibiliKicker">BILIBILI FEATURED</p>
+          <div class="bili-title-line">
+            <span class="bili-mark" aria-hidden="true">
+              <img src="icon/bilibili.svg" alt="" width="20" height="20">
+            </span>
+            <h2 id="bilibiliTitle">Bilibili 精选</h2>
+            <span class="bili-select-badge" data-i18n="bilibili.badge">精选</span>
+          </div>
+        </div>
+        <p class="section-desc" id="bilibiliDesc">从 Bilibili 挑出的一些片段、创作与收藏。</p>
+      </div>
+      <div class="bili-grid" id="bilibiliGrid" aria-busy="true">
+        <p class="loading-line">正在读取配置…</p>
+      </div>
+    </section>
+
+    <section class="section section--git" id="git" data-section="git" aria-labelledby="gitTitle">
+      <div class="section-head">
+        <div class="section-index" aria-hidden="true">
+          <span>02</span>
+          <i></i>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker" id="gitKicker">OPEN SOURCE</p>
+          <h2 id="gitTitle">GitHub 开源项目</h2>
+        </div>
+        <p class="section-desc" id="gitDesc">代码、工具与仍在生长中的想法。</p>
+      </div>
+      <div class="project-grid" id="gitGrid" aria-busy="true">
+        <p class="loading-line">正在读取配置…</p>
+      </div>
+    </section>
+
+    <section class="section section--game" id="game" data-section="game" aria-labelledby="gameTitle">
+      <div class="section-head">
+        <div class="section-index" aria-hidden="true">
+          <span>03</span>
+          <i></i>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker" id="gameKicker">PLAYGROUND</p>
+          <h2 id="gameTitle">游戏项目</h2>
+        </div>
+        <p class="section-desc" id="gameDesc">从规则、叙事到交互，一些正在被做出来的世界。</p>
+      </div>
+      <div class="project-grid" id="gameGrid" aria-busy="true">
+        <p class="loading-line">正在读取配置…</p>
+      </div>
+    </section>
+
+    <section class="section section--commercial" id="commercial" data-section="commercial" aria-labelledby="commercialTitle" hidden>
+      <div class="section-head">
+        <div class="section-index" aria-hidden="true">
+          <span>04</span>
+          <i></i>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker" id="commercialKicker">OBJECTS</p>
+          <h2 id="commercialTitle">商业实体物品</h2>
+        </div>
+        <p class="section-desc" id="commercialDesc">可以带走的设计与物件。</p>
+      </div>
+      <div class="project-grid" id="commercialGrid" aria-busy="true"></div>
+    </section>
+
+    <section class="section section--showcase" id="showcase" data-section="showcase" aria-labelledby="showcaseTitle" hidden>
+      <div class="section-head">
+        <div class="section-index" aria-hidden="true">
+          <span>05</span>
+          <i></i>
+        </div>
+        <div class="section-heading">
+          <p class="section-kicker" id="showcaseKicker">SELECTED</p>
+          <h2 id="showcaseTitle">个人橱窗</h2>
+        </div>
+        <p class="section-desc" id="showcaseDesc">我挑选、使用并愿意分享的东西。</p>
+      </div>
+      <div class="project-grid" id="showcaseGrid" aria-busy="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="footer-seal" aria-hidden="true">乂</span>
+      <p>© <span id="copyrightYear">2026</span> Esric Lee · <span data-i18n="footer.rights">保留所有权利。</span></p>
+    </div>
+  </footer>
+
+  <!-- 展开后的项目详情 -->
+  <div class="detail" id="detail" hidden>
+    <div class="detail-brand-row">
+      <a class="brand brand--overlay" href="#home" id="detailBrand" data-close-detail>
+        <span class="brand-seal" aria-hidden="true">乂</span>
+        <span class="brand-copy">
+          <strong>诸葛蕴乂</strong>
+          <small data-i18n="brand.sub">个人网站</small>
+        </span>
+      </a>
+    </div>
+
+    <div class="detail-scroll" id="detailScroll">
+      <div class="detail-container">
+        <div class="detail-topline">
+          <button class="back-btn" id="detailBack" type="button" data-action="close-detail">
+            <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 10H4M8.5 5.5 4 10l4.5 4.5"></path>
+            </svg>
+            <span data-i18n="action.back">返回</span>
+          </button>
+          <span class="detail-index" id="detailIndex"></span>
+        </div>
+
+        <p class="detail-kicker" id="detailKicker"></p>
+        <h2 class="detail-title" id="detailTitle"></h2>
+        <div class="detail-body" id="detailBody"></div>
+        <div class="detail-actions" id="detailActions"></div>
+
+        <figure class="detail-media" id="detailMedia" hidden>
+          <img id="detailImage" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- 多网站选择弹窗 -->
+  <div class="modal" id="linkModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="linkModalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭">
+        <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="m5 5 10 10M15 5 5 15"></path>
+        </svg>
+      </button>
+      <p class="modal-kicker">LINKS</p>
+      <h2 id="linkModalTitle">选择要前往的网站</h2>
+      <p class="modal-hint" id="linkModalHint"></p>
+      <div class="link-list" id="linkList"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">这个网站需要 JavaScript 才能读取 conf 配置并切换语言。</div>
+  </noscript>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Hello, I am Esric Lee.
+
+This is my personal corner of the internet, a place for open-source projects, games, objects, and a small personal showcase. I care about things that begin from nothing and slowly take shape: a piece of code that works, a world you can step into, or an object worth keeping close.
+
+Feel free to look around, or find me on Bilibili and GitHub.
